@@ -1,0 +1,22 @@
+﻿@model Expert
+<div class="container">
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label class="form-label">FullName</label>
+            <input asp-for="FullName" class="form-control"  aria-describedby="emailHelp">
+            <span asp-validation-for="FullName  " style="color:red" ></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">FullName</label>
+            <input asp-for="Job" class="form-control" aria-describedby="emailHelp">
+            <span asp-validation-for="Job  " style="color:red"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Image</label>
+            <input asp-for="ImgFile" class="form-control" aria-describedby="emailHelp">
+            <span asp-validation-for="ImgFile  " style="color:red"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
